@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js" defer></script>
+    <title>Recipe App</title>
+</head>
+<body>
+    <header class="row">
+    <nav class="nav-bar row">
+        <ul class="nav-list">
+            <a class="logo">Recipe <span>Master</span></a>
+        <div class="sign-ins row">
+            
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" id="sign-in">Sign In</a></li></li>
+        </div>
+        </ul>
+    </nav>
+</header>
+    <main>
+         <div class="container search-bar">
+            <input type="text" name="searchbar" id="recipe-search" onkeydown="if (event.keyCode == 13)
+            document.getElementById('search-btn').click()" placeholder="Search for a dish...">
+            <input type="button" value="search" id="search-btn" onclick="getFood(searchBox.value), clr()">
+        </div>
+         <div class="container" id="container" >
+            <input type="button" value="Random" id="random-btn"onclick="getRandom()">
+            <div class="carousel" data-carousel>
+                <button class="carousel-button prev" data-carousel-button="prev">&#8656</button>
+                <button class="carousel-button next" data-carousel-button="next">&#8658</button>
+            <div class="slider" id="slider" data-slides> 
+                        
+
+
+
+
+                </section>
+            </div>
+        </div> 
+        </div>  
+    </main> 
+</body>
+
+</html>
